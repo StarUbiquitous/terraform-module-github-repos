@@ -79,8 +79,8 @@ variable "enforce_admins" {
 }
 
 variable "has_issues" {
-  type = bool
-  default = true
+  type        = bool
+  default     = true
   description = "Flag to enable issues"
 }
 
