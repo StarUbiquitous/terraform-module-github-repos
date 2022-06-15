@@ -1,0 +1,8 @@
+{
+  "private": true,
+  "name": "terraform-tencentcloud-cdn",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/StarUbiquitous/terraform-module-github-repos.git"
+  }
+}
