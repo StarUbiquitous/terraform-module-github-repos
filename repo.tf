@@ -1,6 +1,7 @@
 resource "github_repository" "repo" {
   name                   = var.repo_name
   description            = var.description
+  homepage_url           = try(var.homepage_url, null)
   visibility             = var.visibility
   allow_merge_commit     = true
   allow_rebase_merge     = true

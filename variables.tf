@@ -19,6 +19,11 @@ variable "description" {
   description = "The repository description."
 }
 
+variable "homepage_url" {
+  type        = string
+  description = "The repository homepage url."
+}
+
 variable "secrets" {
   type        = map(string)
   description = "Github Actions secrets for this reporsitory."
