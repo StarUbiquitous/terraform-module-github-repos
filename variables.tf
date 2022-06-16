@@ -22,6 +22,7 @@ variable "description" {
 variable "homepage_url" {
   type        = string
   description = "The repository homepage url."
+  default     = null
 }
 
 variable "secrets" {
