@@ -24,6 +24,18 @@ resource "github_repository" "repo" {
       repository = template.value
     }
   }
+
+  security_and_analysis {
+    advanced_security {
+      status = var.advanced_security
+      secret_scanning {
+        status = var.secret_scanning
+      }
+      secret_scanning_push_protection {
+        status = var.secret_scanning_push_protection
+      }
+    }
+  }
 }
 
 resource "github_branch_protection" "branch_protection" {

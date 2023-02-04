@@ -150,4 +150,21 @@ variable "allow_update_branch" {
   description = "Set to true to suggest updating pull request branches."
 }
 
+variable "advanced_security" {
+  type        = bool
+  default     = true
+  description = "Set to true to enable advanced security features on the repository."
+}
+
+variable "secret_scanning" {
+  type        = bool
+  default     = true
+  description = "Set to true to enable secret scanning on the repository."
+}
+
+variable "secret_scanning_push_protection" {
+  type        = bool
+  default     = true
+  description = "Set to true to enable secret scanning push protection on the repository."
+}
 
