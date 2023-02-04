@@ -8,9 +8,12 @@ resource "github_repository" "repo" {
   allow_squash_merge     = true
   is_template            = false
   has_issues             = var.has_issues
+  has_discussions        = var.has_discussions
+  has_projects           = var.has_projects
   delete_branch_on_merge = var.delete_branch_on_merge
   topics                 = var.topics
   has_downloads          = var.has_downloads
+  has_wiki               = var.has_wiki
   vulnerability_alerts   = var.vulnerability_alerts
 
   dynamic "template" {

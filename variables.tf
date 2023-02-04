@@ -90,6 +90,18 @@ variable "has_issues" {
   description = "Flag to enable issues"
 }
 
+variable "has_discussions" {
+  type        = bool
+  default     = false
+  description = "Flag to enable discussions"
+}
+
+variable "has_projects" {
+  type        = bool
+  default     = true
+  description = "Flag to enable projects"
+}
+
 variable "delete_branch_on_merge" {
   type        = bool
   default     = false
@@ -106,6 +118,12 @@ variable "has_downloads" {
   type        = bool
   default     = false
   description = "Set to true to enable the (deprecated) downloads features on the repository."
+}
+
+variable "has_wiki" {
+  type        = bool
+  default     = false
+  description = "Set to true to enable the wiki features on the repository."
 }
 
 variable "push_restrictions" {
