@@ -6,6 +6,7 @@ resource "github_repository" "repo" {
   allow_merge_commit     = true
   allow_rebase_merge     = true
   allow_squash_merge     = true
+  allow_update_branch    = var.allow_update_branch
   is_template            = false
   has_issues             = var.has_issues
   has_discussions        = var.has_discussions

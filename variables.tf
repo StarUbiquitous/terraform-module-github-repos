@@ -144,4 +144,10 @@ variable "allows_force_pushes" {
   description = "Set to true to allow force pushes to the repository."
 }
 
+variable "allow_update_branch" {
+  type        = bool
+  default     = false
+  description = "Set to true to suggest updating pull request branches."
+}
+
 
